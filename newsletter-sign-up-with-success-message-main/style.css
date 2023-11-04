@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -13,7 +23,12 @@ body{
     flex-direction: column;
 }
 
-.container{
+.attribution{
+    font-family: Roboto-Bold;
+    color: #fff;
+}
+
+#container{
     background-color: #fff;
     display: flex;
     height: 87%;
@@ -30,12 +45,14 @@ body{
 
 /* ---- Upper ---- */
 .heading{
+    font-family: Roboto-Bold;
     font-size: 55px;
     margin-left: 3.5rem;
     margin-top: 6.5rem;
 }
 
 .intro{
+    font-family: Roboto-Regular;
     font-size: 15px;
     margin-left: 2rem;
     padding: 20px 28px;
@@ -53,6 +70,7 @@ body{
 }
 
 .point h1{
+    font-family: Roboto-Regular;
     font-size: 15px;
 }
 
@@ -73,22 +91,33 @@ body{
 }
 
 .lower label{
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-family: Roboto-Bold;
+    font-size: 13px;
+}
+
+#email-error{
+    font-family: Roboto-Bold;
+    color: rgb(255,97,85);
+    font-size: 12px;
+    margin-left: 9.1rem;
 }
 
 .lower input{
     border: 1px solid black;
     border-radius: 5px;
     padding: 15px;
+    margin-top: 0.5rem;
 }
 
 .lower button{
+    font-family: Roboto-Bold;
+    border: 1px;
     background-color: black;
     color: white;
     margin-top: 1.2rem;
     border-radius: 5px;
     padding: 15px;
+    cursor: pointer;
 }
 
 /* ---- Right ---- */
@@ -98,6 +127,7 @@ body{
     padding: 20px 0px;
     box-sizing: border-box;
 }
+
 .right img{
     max-width: 100%;
     height: 100%;
@@ -105,4 +135,59 @@ body{
     object-fit: cover;
     display: block;
     border-radius: 15px;
+}
+
+/* ---- Pop Up ---- */
+
+#popup{
+    position: absolute;
+    margin: 5rem auto;
+    background-color: #fff;
+    height: 60%;
+    width: 29%;
+    border-radius: 20px;
+    padding: 3rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+/* ---- Pop Up Upper ---- */
+
+.popup-upper{
+    margin-bottom: 1.5rem;
+}
+
+.popup-upper img{
+    height: 2.7rem;
+}
+
+/* ---- Pop Up Middle ---- */
+
+.popup-middle h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ---- Pop Up Lower ---- */
+
+.popup-lower{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-lower button{
+    padding: 10px 100px 10px 130px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup-lower button:hover{
+    background-color: rgb(255, 97, 85);
 }
