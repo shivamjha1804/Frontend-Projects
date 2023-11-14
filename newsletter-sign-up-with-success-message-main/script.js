@@ -32,3 +32,10 @@ dismissButton.addEventListener('click', function(){
     containerBox.style.visibility = "visible";
     popupBox.style.visibility = "hidden";
 });
+
+dismissButton.addEventListener('mouseleave')
+
+submitButton.querySelector('#wrapper text').id = '#inputEl';
+
+
+submitButton.childNodes.visibility = 'hidden';
