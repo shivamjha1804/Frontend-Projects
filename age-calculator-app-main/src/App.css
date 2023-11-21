@@ -1,0 +1,12 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ 
+
+body{
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: rgb(205, 201, 201);
+}

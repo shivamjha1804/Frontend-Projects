@@ -1,0 +1,6 @@
+.submit{
+    border: 1px solid black;
+    border-radius: 50% 50%;
+    background-color: rgb(143, 65, 143);
+    margin-bottom: 1rem;
+}
