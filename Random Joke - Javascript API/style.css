@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FF5733;
+    height: 100vh;
+}
+
+.custom-box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add your preferred box-shadow values here */
+}
