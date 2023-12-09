@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+/* CARD */
+
+.customCard {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+#error {
+  display: none;
+}
+
+.information {
+  display: none;
+}

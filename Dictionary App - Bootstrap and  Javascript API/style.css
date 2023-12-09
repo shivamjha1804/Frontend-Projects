@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+.custom-input{
+    border: none;
+    border-bottom: 3px solid purple;
+}
+
+.custom-button-one {
+    background-color: purple;
+    font-size: 15px;
+    color: #fff;
+}
+
+.custom-button-two{
+    border: none;
+    background-color: #fff;
+}
+
+.custom-button-two img{
+    height: 25px;
+}
+
+.custom-text{
+    border-left: 3px solid purple;
+}

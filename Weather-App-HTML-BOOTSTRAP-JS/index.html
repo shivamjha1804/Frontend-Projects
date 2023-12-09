@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | HTML BootStrap JS</title>
+    <link rel="shortcut icon" href="./Image/mountain-sun-solid.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex justify-content-center bg-dark align-items-center ">
+    <div class="col-3 container customCard shadow-lg rounded-4 d-flex flex-column justify-content-center align-items-center">
+        <div class="row m-3 container">
+            <div class="col-9">
+                <input id="searchBox" type="text" class="rounded-5 ps-3 pe-5 py-1 opacity-75 "
+                    placeholder="Enter any city">
+            </div>
+            <div class="col-2 ms-2">
+                <button id="searchButton" type="submit"
+                    class="rounded-circle p-2 d-flex opacity-75 justify-content-center align-items-center ">
+                    <img src="./Image/magnifying-glass-solid.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div id="error" class="row ms-2 container">
+            <p class="fw-lighter text-white">Invalid Input*</p>
+        </div>
+
+        <div class="information">
+            <div class="row m-3 container justify-content-center align-items-center">
+                <img id="weatherIcons" src="./Image/rain.png" alt="" class="w-50">
+            </div>
+
+            <div class="row container mt-3">
+                <h1 id="temperature" class="fw-bolder text-white d-flex justify-content-center align-items-center">
+                    25&deg;c
+                </h1>
+            </div>
+
+            <div class="row mb-4 container">
+                <h1 id="city" class="fw-bold fs-2 text-white m-3 d-flex justify-content-center align-items-center">
+                    New York
+                </h1>
+            </div>
+
+            <div class="row container">
+                <div class="col-5 d-flex">
+                    <div class="col-4 me-2 mt-3 text-end ">
+                        <img class="w-75 " src="./Image/humidity.png" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="col ">
+                            <h3 id="humidity" class="fw-normal text-white">
+                                64%
+                            </h3>
+                        </div>
+                        <div class="col pb-5">
+                            <h6 class="fs-6 fw-lighter  text-white">
+                                Humidity
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="col-3 me-2 mt-3 text-end">
+                        <img class="w-75" src="./Image/wind.png" alt="">
+                    </div>
+                    <div class="col ">
+                        <div class="col">
+                            <h3 id="wind" class="fw-normal fs-4 text-white">
+                                18.29 km/h
+                            </h3>
+                        </div>
+                        <div class="col ps-2">
+                            <h6 class="fs-6 fw-lighter text-white">
+                                wind speed
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
